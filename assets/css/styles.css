@@ -1,0 +1,544 @@
+
+/*
+==========================
+Grid
+==========================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+/*
+==========================
+Custom styles
+==========================
+*/
+
+html{
+    font-size: 16px;     
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px ){
+
+    html{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .desktop-view{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .mobile-view{
+        display: none;
+    }
+}
+
+body{   
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    max-width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h1{
+    font-size: 2.2rem;
+    color: rgb(75, 75, 75);
+}
+
+h2{
+    font-size: 1.41rem;
+}
+
+h3{
+    font-size: 1.16rem;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+h5{
+    font-size: 0.89rem;
+}
+
+h6{
+    font-size: 0.82rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(75, 75, 75);
+    cursor: pointer;
+
+}
+
+a:hover{
+    color: black;
+}
+
+/*
+==========================
+Clearfix
+==========================
+*/
+
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+==========================
+Horizontal cards
+==========================
+*/
+
+.horizontal-card{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(200, 200, 200);
+    font-family: 'Montserrat', sans-serif;
+    padding: 16px;
+    cursor: pointer;
+}
+.horizontal-card img{
+    width: 35%;
+    height: auto;
+}
+
+.horizontal-card .card-text{
+    width: 65%;
+    padding: 1.5rem;
+}
+
+.horizontal-card .card-text h2{
+    padding: 8px 0;
+    color: rgb(75, 75, 75);
+}
+
+.horizontal-card .card-text h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+.horizontal-card .card-text a{
+    display: block;
+    padding: 8px 0;
+    font-weight: 500;
+    color: royalblue;
+}
+
+.horizontal-card:hover{
+    background-color:rgb(200, 200, 200);
+}
+
+/*
+==========================
+vertical cards
+==========================
+*/
+
+.vertical-card{
+    background-color: white;
+    word-wrap: break-word;
+    width: 350px;
+    
+}
+
+.vertical-card img{
+    height: auto;
+    width: 100%;
+}
+.vertical-card h2{
+    padding: 16px 0 0 16px;
+    color: rgb(75, 75, 75);
+}
+
+.vertical-card h4{
+    text-transform: uppercase;
+    padding: 16px;
+    color: rgb(100, 100, 100);
+    font-weight: 400;
+}
+
+.vertical-card p{
+    font-size: 1rem;
+    padding: 0 16px 24px 16px;
+    line-height: 1.4;
+    color: rgb(100, 100, 100);
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*
+==========================
+Header
+==========================
+*/
+
+/*Desktop View*/
+
+header{
+    height: 64px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    height: 32px;
+}
+
+header .logo img{
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+}
+
+header .logo .logo-text{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(200, 200, 200);
+    vertical-align: middle;
+    margin-left: -10px;
+}
+
+header .logo-text span{
+    font-weight: bold; 
+    color: rgb(75, 75, 75);
+
+}
+
+header .desktop-view ul{
+    display: flex;
+    text-decoration: none; 
+}
+
+header .desktop-view ul li{
+    margin-left: 1rem;
+    
+}
+
+/*Mobile view*/
+@media only screen and (max-width: 700px){
+
+    .logo{
+        display: none;
+    }
+
+    header .desktop-view{
+        display: none;
+    }
+
+    header .mobile-view{
+        display: block;
+        max-width: 100%;
+        width: 100vw;
+    }
+
+    header .mobile-view ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+/*
+==========================
+Main
+==========================
+*/
+
+main{
+    background-color: rgb(230, 230, 230);
+    max-width: 100%;
+}
+
+main img{
+    width: 60vw;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 32px 32px 32px 24px;
+}
+
+#main-text{
+    width: 30%;
+    color:rgb(75, 75, 75);
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 24px;
+    
+}
+
+#main-text h1{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+#main-text h2{
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+#main-text button{
+    background-color: rgb(75, 75, 75);
+    width: 100%;
+    padding: 8px 0;
+    margin-top: 1rem;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+#main-text a{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/*Mobile view*/
+@media only screen and (max-width: 700px){
+
+    main{
+        max-width: 100%;
+    }
+
+    main img{
+        display: block;
+        width: 100vw;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    #main-text{
+        display: inline-block;
+        width: 100vw;
+        max-width: calc(100% - 32px);
+        padding: 16px;
+    }
+
+}
+
+/*
+==========================
+Information section
+==========================
+*/
+
+.info{
+    display: flex;
+    max-width: 100%;
+    width: 100vw;
+}
+
+.info-left img{
+    width: 60vw;
+    padding: 32px 24px;
+}
+
+#info-left-text{
+    margin: 0 24px;
+    padding-right: 24px;
+    
+}
+
+#info-left-text h1{
+    padding-bottom: 24px;
+    font-weight: bolder;
+}
+
+#info-left-text h5{
+    padding: 32px 0;
+}
+
+.info-aside .desktop-view{
+    flex-basis: 0 0 40vw;
+    padding: 32px 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width:700px){
+    .desktop-view{
+        display: none;
+    }
+
+    .info-aside .horizontal-card{
+        flex-direction: column;
+    }
+
+    .info-aside .horizontal-card .card-text{
+        width: 100%;
+    }
+
+    .info-aside .horizontal-card .card-text *{
+        padding-bottom: 10px;
+    }
+
+
+    .info-aside .horizontal-card img{
+        width: 100vw;
+        max-width: 100%;
+    }
+
+}
+
+
+/*
+==========================
+Courses
+==========================
+*/
+
+.courses{
+    background-color: rgb(230, 230, 230);
+}
+
+.courses h1{
+    text-align: center;
+    padding: 32px 0;
+}
+
+.course-cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 72px ;
+    justify-content: space-evenly;
+}
+
+.vertical-card {
+    margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 700px){
+
+    .courses{
+        background-color: white;
+        padding-bottom: 32px;
+    }
+
+    .courses-nav li{
+        background-color: rgb(200, 200, 200);
+        max-width: 100%;
+        text-align: left;
+        padding: 24px 16px;
+        margin: 8px 16px;
+    }
+
+    .courses-nav a{
+        font-size: 1.4rem;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 700;
+    }
+
+}
+
+
+/*
+==========================
+Exhibit
+==========================
+*/
+
+.exhibit-section h1{
+    padding: 32px 0;
+    text-align: center;
+}
+
+.exhibits{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+}
+
+.video-section{
+    width: 60%;
+}
+
+.video-section video{
+    width: 60vw;
+    padding: 0 24px;
+}
+
+.video-section h2{
+    padding: 32px 24px 8px 24px;
+}
+
+.video-section p{
+    padding: 8px 24px 32px 24px;
+    line-height: 1.4;
+    color: rgb(100, 100, 100);
+}
+
+.exhibits aside{
+    width: 40vw;
+}
+
+@media only screen and (max-width: 700px){
+
+    .video-section{
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    .video-section video{
+        padding: 0;
+        padding-bottom: 24px;
+        width: 100%;
+    }
+
+}
+
+/*
+==========================
+Footer
+==========================
+*/
+
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(200, 200, 200);
+    color: rgb(100, 100, 100);
+    padding: 16px 24px 0 24px;
+}
+
+footer nav li{
+    display: inline-block;
+    padding-left: 16px;
+}

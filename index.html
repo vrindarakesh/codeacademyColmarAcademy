@@ -8,140 +8,227 @@
 
     <link rel = "stylesheet" type ="text/css" href="./assets/css/reset.css">
     <link rel = "stylesheet" type ="text/css" href="./assets/css/styles.css">
-  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&
+            family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
+        <div class ="logo">
+            <img src="./assets/images/ic-logo.svg" alt="logo">
+            <a href="#"class ="logo-text"><span>colmar</span>academy</a>
+        </div>
+        
+        <nav class="desktop-view">
+            <ul>
+                <li><a href="#">On campus</a></li>
+                <li><a href="#">Online</a></li>
+                <li><a href="#">For companies</a></li>
+                <li><a href="#">Sign in</a></li>
+            </ul>   
+        </nav>
 
-        <img src="./assets/images/ic-logo.svg" alt="logo">
-        <a href="#"class ="logo-text">COLMAR<span>ACADEMY</span></a>
-
-        <nav>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+        <nav class="mobile-view">
+            <ul>
+                <li><a href="#"><img src="./assets/images/ic-logo.svg" alt="logo"></a></li>
+                <li><a href="#"><img src="./assets/images/ic-on-campus.svg" alt="icon - on campus"></a></li>
+                <li><a href="#"><img src="./assets/images/ic-online.svg" alt="icon-online"></a></li>
+                <li><a href="#"><img src="./assets/images/ic-login.svg" alt=""></a></li>
+            </ul>
         </nav>
 
     </header>
 
-    <main>
+    <main class="clearfix">
 
         <img src="./assets/images/banner.jpg" alt="banner Students learning">
-        <h1>Learn something new everyday</h1>
-        <h3>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        <button>Start here</button>
-
+        <div id="main-text">
+            <h1>Learn something new everyday</h1>
+            <h2>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            <button><a href="#">Start here</a></button>
+        </div>
+        
     </main>
 
-    <section>
-        <section>
+    <section class ="info">
+
+        <section class="info-left desktop-view">
             <img src="./assets/images/information-main.jpg" alt ="Man reading a book">
-            <h1>IT doesn't hurt to keep practicing</h1>
-            <p>
-                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
-            <h5>Emanuel, Sr Strategist at Hiring.com</h5>
+            <div id ="info-left-text">
+                <h1>It doesn't hurt to keep practicing</h1>
+                <p>
+                    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+                <h5>Emanuel, Sr Strategist at Hiring.com</h5>
+            </div>
         </section>
 
-        <aside>
+        <aside class="desktop-view info-aside">
             <article class="horizontal-card">
                 <img src="./assets/images/information-orientation.jpg" alt="orientation people walking through walkway">
-                <h3>Orientation date</h3>
-                <h5>Tue 10/11 & Web 10/12: 8.30am-3pm</h5>
-                <a href="#">Read more</a>
+                <div class="card-text">
+                    <h2>Orientation date</h2>
+                    <h4>Tue 10/11 & Wed 10/12: 8.30am-3pm</h4>
+                    <a href="#">Read more</a>
+                </div>
             </article>
+
             <article class="horizontal-card">
                 <img src="./assets/images/information-campus.jpg" alt="campus Library students reading">
-                <h3>Our Campus</h3>
-                <h5>Find which campus is close by you</h5>
-                <a href="#">Read more</a>
+                <div class="card-text">
+                    <h2>Our Campus</h2>
+                    <h4>Find which campus is close by you</h4>
+                    <a href="#">Read more</a>
+                </div>             
             </article>
+
             <article class="horizontal-card">
                 <img src="./assets/images/information-guest-lecture.jpg" alt="Oliver Sack">
-                <h3>Our Guest Lecture</h3>
-                <h5>Join a keynote with Oliver Sack about music in medical treatment</h5>
-                <a href="#">Read more</a>
+                <div class="card-text">
+                    <h2>Our Guest Lecture</h2>
+                    <h4>Join a keynote with Oliver Sack about music in medical treatment</h4>
+                    <a href="#">Read more</a>
+                </div>   
             </article>
         </aside>
+        <!--Mobile view-->
+        <aside class="mobile-view info-aside">
+            <article class="horizontal-card">
+                <img src="./assets/images/information-orientation-mobile.jpg" alt="orientation people walking through walkway">
+                <div class="card-text">
+                    <h2>Orientation date</h2>
+                    <h4>Tue 10/11 & Wed 10/12: 8.30am-3pm</h4>
+                    <a href="#">Read more</a>
+                </div>
+            </article>
+
+            <article class="horizontal-card">
+                <img src="./assets/images/information-campus-mobile.jpg" alt="campus Library students reading">
+                <div class="card-text">
+                    <h2>Our Campus</h2>
+                    <h4>Find which campus is close by you</h4>
+                    <a href="#">Read more</a>
+                </div>             
+            </article>
+
+            <article class="horizontal-card">
+                <img src="./assets/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack">
+                <div class="card-text">
+                    <h2>Our Guest Lecture</h2>
+                    <h4>Join a keynote with Oliver Sack about music in medical treatment</h4>
+                    <a href="#">Read more</a>
+                </div>   
+            </article>
+        </aside>
+
     </section>
 
-    <section>
+    <section class="courses">
         <h1>Start Learning</h1>
-        <article class="vertical-card">
-            <img src="./assets/images/course-software.jpg" alt="computer work desk">
-            <h3>Software Engineering</h3>
-            <h5>Courses</h5>
-            <h5>Web Development, Mobile development, IoT, APIs</h5>
-        </article>
-        <article class="vertical-card">
-            <img src="./assets/images/course-computer-art.jpg" alt="Mobile screen">
-            <h3>Computer Art</h3>
-            <h5>Courses</h5>
-            <h5>Imaging and design, Web design, Motio Graphics and Visual Effects, Computer Animation</h5>
-        </article>
-        <article class="vertical-card">
-            <img src="./assets/images/course-design.jpg" alt="Video Camera">
-            <h3>Design</h3>
-            <h5>Courses</h5>
-            <h5>User Experience Design, User Research, Visual Design</h5>
-        </article>
-        <article class="vertical-card">
-            <img src="./assets/images/course-data.jpg" alt="Data analysis on laptop">
-            <h3>Data</h3>
-            <h5>Courses</h5>
-            <h5>Data science, Big Data, SQL, Data Visualization</h5>
-        </article>
-        <article class="vertical-card">
-            <img src="./assets/images/course-business.jpg" alt="Checkboard">
-            <h3>Business</h3>
-            <h5>Courses</h5>
-            <h5>Product Development, Business Development, Startup</h5>
-        </article>
-        <article class="vertical-card">
-            <img src="./assets/images/course-marketing.jpg" alt="Adjusting Smart Watch">
-            <h3>Marketing</h3>
-            <h5>Courses</h5>
-            <h5>Analytics, Content Marketing, Mobile Marketing</h5>
-        </article>
+
+        <div class="desktop-view">
+            <div class="course-cards">
+                <article class="vertical-card">
+                    <img src="./assets/images/course-software.jpg" alt="computer work desk">
+                    <h2>Software Engineering</h2>
+                    <h4>Courses</h4>
+                    <p>Web Development, Mobile development, IoT, APIs</p>
+                </article>
+                <article class="vertical-card">
+                    <img src="./assets/images/course-computer-art.jpg" alt="Mobile screen">
+                    <h2>Computer Art</h2>
+                    <h4>Courses</h4>
+                    <p>Imaging and design, Web design, Motio Graphics and Visual Effects, Computer Animation</p>
+                </article>
+                <article class="vertical-card">
+                    <img src="./assets/images/course-design.jpg" alt="Video Camera">
+                    <h2>Design</h2>
+                    <h4>Courses</h4>
+                    <p>User Experience Design, User Research, Visual Design</p>
+                </article>
+                <article class="vertical-card">
+                    <img src="./assets/images/course-data.jpg" alt="Data analysis on laptop">
+                    <h2>Data</h2>
+                    <h4>Courses</h4>
+                    <p>Data science, Big Data, SQL, Data Visualization</p>
+                </article>
+                <article class="vertical-card">
+                    <img src="./assets/images/course-business.jpg" alt="Checkboard">
+                    <h2>Business</h2>
+                    <h4>Courses</h4>
+                    <p>Product Development, Business Development, Startup</p>
+                </article>
+                <article class="vertical-card">
+                    <img src="./assets/images/course-marketing.jpg" alt="Adjusting Smart Watch">
+                    <h2>Marketing</h2>
+                    <h4>Courses</h4>
+                    <p>Analytics, Content Marketing, Mobile Marketing</p>
+                </article>
+            </div> 
+        </div>
+        <!--Mobile view-->
+        <div class= "mobile-view courses-nav">
+            <ul>
+                <li><a href="#">Software Engineering</a></li>
+                <li><a href="#">Computer Art</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Data</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Marketing</a></li>
+            </ul>
+        </div>
+        
     </section>
 
-    <section>
-        <h1>Thesis Exhibit</h1>
-        <section>
-            <video>
-                <source src="./assets/videos/thesis.mp4">
-                    Browser not able to render embedded video!
-            </video>
-            <h3>Reimagine urban</h3>
-            <p>
-                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+    <section class="exhibit-section">
 
-        </section>
-        <aside>
-            <article class="horizontal-card">
-                <img src="./assets/images/thesis-fisma.jpg" alt = 'design wireframes'>
-                <h3>Fisma: Design and Prototype</h3>
-                <h5>Designer showcase of new prototype product</h5>
-            </article>
-            <article class="horizontal-card">
-                <img src="./assets/images/thesis-now-and-then.jpg" alt = 'design wireframes'>
-                <h3>Now and then</h3>
-                <h5>Research study about New York</h5>
-            </article>
-        </aside>
+        <h1>Thesis Exhibit</h1>
+        <div class="exhibits">
+            <section class="video-section">
+                <video controls>
+                    <source src="./assets/videos/thesis.mp4">
+                        Browser not able to render embedded video!
+                </video>
+                <h2 class="desktop-view">Reimagine urban</h2>
+                <p class="desktop-view">
+                    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+            </section>
+    
+            <aside class="desktop-view">
+                <article class="horizontal-card">
+                    <img src="./assets/images/thesis-fisma.jpg" alt = 'design wireframes'>
+                    <div class="card-text">
+                        <h2>Fisma: Design and Prototype</h2>
+                        <h4>Designer showcase of new prototype product</h4>
+                    </div>                    
+                </article>
+                <article class="horizontal-card">
+                    <img src="./assets/images/thesis-now-and-then.jpg" alt = 'design wireframes'>
+                    <div class="card-text">
+                        <h2>Now and then</h2>
+                        <h4>Research study about New York</h4>
+                    </div>              
+                </article>
+            </aside>
+        </div>
+        
+
     </section>
 
     <footer>
+
         <small>&#169 2016 Colmar Academy. All rights reserved </small>
-        <nav>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
+        
+        <nav class="desktop-view">
+            <ul>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
         </nav>
+
     </footer>
     
 </body>
